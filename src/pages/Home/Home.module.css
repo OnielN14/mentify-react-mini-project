@@ -1,0 +1,10 @@
+.Home__HighlightContainer {
+    --margin: 4rem;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}

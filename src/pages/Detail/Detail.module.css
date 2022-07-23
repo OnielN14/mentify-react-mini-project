@@ -1,0 +1,42 @@
+.Detail {
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: auto 1fr;
+}
+
+.Detail__Breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+}
+
+.Detail__Breadcrumb>div:last-child {
+    font-weight: bold;
+}
+
+.Detail__Content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.Detail__Poster>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Detail__Info * {
+    margin: 0px
+}
+
+.Detail__Info>h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.Detail__Info>h3 {
+    font-family: "Inter", sans-serif;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}

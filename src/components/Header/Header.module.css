@@ -1,0 +1,24 @@
+.Header {
+    text-align: center;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.Header__Title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.Header__TagLine>span,
+.Header__Title>span {
+    font-weight: 800;
+}
+
+.Header__TagLine>span {
+    color: var(--gray);
+}

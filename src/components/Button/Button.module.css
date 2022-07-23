@@ -1,0 +1,16 @@
+.Button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    background: #303238;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+}
+
+.Button:hover {
+    cursor: pointer;
+}
