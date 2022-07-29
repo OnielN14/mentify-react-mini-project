@@ -1,5 +1,5 @@
 .Home__HighlightContainer {
-    --margin: 4rem;
+    --margin: 5rem;
     margin-top: var(--margin);
     margin-bottom: var(--margin);
 
@@ -7,4 +7,20 @@
     gap: 3rem;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.Home__PopularContainerWrapper {
+    background-color: #F5F5F5;
+}
+
+.Home__PopularContainer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.Home__PopularItems {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
 }

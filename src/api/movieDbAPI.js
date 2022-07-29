@@ -14,12 +14,14 @@ const movieDbAPI = axios.create({
 })
 
 const getUpcoming  = () => movieDbAPI.get("/movie/upcoming")
-const getMoveDetail = (id) => movieDbAPI.get(`/movie/${id}`) 
+const getMoveDetail = (id) => movieDbAPI.get(`/movie/${id}`)
+const getPopular = ()=> movieDbAPI.get(`/movie/popular`)
 
 export {
     IMAGE_HOST,
     getUpcoming,
-    getMoveDetail
+    getMoveDetail,
+    getPopular
 }
 
 export default movieDbAPI;
