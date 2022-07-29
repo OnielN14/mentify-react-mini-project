@@ -1,7 +1,13 @@
+.SearchBar__Wrapper {
+    position: relative;
+}
+
 .SearchBar {
     display: flex;
     box-shadow: 0px 4px 6px rgb(0 0 0 / 25%);
     padding: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 .SearchBar>input {
@@ -31,4 +37,37 @@
 
 .SearchBar__Affix img {
     width: 100%;
+}
+
+.SearchBar__ResultWrapper {
+    position: absolute;
+    padding-top: 3.8rem;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    box-shadow: 0px 21px 23px rgba(0, 0, 0, 0.15);
+}
+
+.SearchBar__Result {
+    background-color: white;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.SearchBar__ResultItem {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background ease-in-out 0.15s;
+}
+
+.SearchBar__ResultItem:hover {
+    background-color: #F5F5F5;
+}
+
+.SearchBar__ResultItem:visited {
+    color: inherit;
 }

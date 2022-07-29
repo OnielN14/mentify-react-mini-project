@@ -44,8 +44,6 @@ function Home() {
             })
           })
 
-          console.log({ transformed })
-
           setPopularMovies(transformed)
         })
     }
