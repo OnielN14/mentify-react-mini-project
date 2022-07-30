@@ -2,17 +2,16 @@ import style from './Detail.module.css'
 import Header from '../../components/Header'
 import homeImg from "../../assets/images/home.png"
 import { Link, useLocation, useParams } from 'react-router-dom'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getMoveDetail, IMAGE_HOST } from '../../api/movieDbAPI'
 
 const Detail = () => {
-    const isMounted = useRef(false)
     const param = useParams()
     const location = useLocation()
     const [detail, setDetail] = useState(location.state)
     
     useEffect(() => {
-        if (isMounted.current && location.state === null && param.id) {
+        if (location.state === null && param.id) {
             getMoveDetail(param.id)
                 .then((response) => {
                     const { title, overview, poster_path, id, release_date } = response.data
@@ -25,8 +24,6 @@ const Detail = () => {
                     })
                 })
         }
-
-        isMounted.current = true
     }, [param, location])
     
     return (
